@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dhiman Goswami</title>
+<meta name="description" content="Dhiman Goswami — Ph.D. candidate in Computer Science at George Mason University. NLP, HCI, and Privacy.">
+<meta name="theme-color" content="#006633">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #006633;      /* GMU green — change to any color you like */
+    --accent-soft: #e8f2ec;
+    --text: #222;
+    --muted: #666;
+    --border: #e5e5e5;
+    --bg: #fff;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Source Sans 3", Helvetica, Arial, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; font-size: 17px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: 280px 1fr; gap: 56px; }
+
+  /* ---------- Left sidebar ---------- */
+  aside { position: sticky; top: 32px; align-self: start; text-align: center; }
+  aside img { width: 200px; height: 200px; object-fit: cover; border-radius: 50%; border: 4px solid var(--accent-soft); }
+  aside h1 { font-size: 1.6rem; margin: 16px 0 4px; }
+  aside .role { color: var(--muted); font-size: .95rem; margin: 0 0 16px; }
+  aside ul { list-style: none; padding: 0; margin: 0; text-align: left; display: inline-block; }
+  aside li { margin: 6px 0; font-size: .95rem; }
+  aside li span { display: inline-block; width: 22px; }
+
+  /* ---------- Main content ---------- */
+  main h2 { font-size: 1.35rem; border-bottom: 2px solid var(--accent); padding-bottom: 4px; margin: 40px 0 16px; }
+  main h2:first-child { margin-top: 0; }
+  main h3 { font-size: 1.05rem; color: var(--muted); margin: 24px 0 8px; }
+  .interests { background: var(--accent-soft); padding: 10px 14px; border-radius: 6px; }
+
+  .pub { display: grid; grid-template-columns: 110px 1fr; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+  .venue { font-weight: 700; color: var(--accent); font-size: .9rem; }
+  .title { font-weight: 600; }
+  .authors { color: var(--muted); font-size: .95rem; }
+  .authors b { color: var(--text); }
+  .full-venue { font-size: .9rem; font-style: italic; color: var(--muted); }
+
+  .item { display: grid; grid-template-columns: 150px 1fr; gap: 16px; padding: 6px 0; }
+  .item .when { color: var(--muted); font-size: .95rem; }
+  ul.plain { padding-left: 20px; margin: 0; }
+  ul.plain li { margin: 4px 0; }
+  footer { grid-column: 1 / -1; text-align: center; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--border); padding-top: 20px; }
+
+  /* ---------- Phone layout ---------- */
+  @media (max-width: 800px) {
+    .wrap { grid-template-columns: 1fr; gap: 32px; padding: 32px 16px; }
+    aside { position: static; }
+    .pub, .item { grid-template-columns: 1fr; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside>
+    <img src="profile.jpg" alt="Dhiman Goswami">
+    <h1>Dhiman Goswami</h1>
+    <p class="role">Ph.D. Candidate, Computer Science<br>George Mason University</p>
+    <ul>
+      <li><span>✉️</span><a href="mailto:dgoswam@gmu.edu">dgoswam@gmu.edu</a></li>
+      <li><span>📄</span><a href="cv.pdf">Curriculum Vitae</a></li>
+      <li><span>🎓</span><a href="https://scholar.google.com/citations?user=9HNJ_NcAAAAJ">Google Scholar</a></li>
+      <li><span>💼</span><a href="https://linkedin.com/in/dhimangoswami8">LinkedIn</a></li>
+    </ul>
+  </aside>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+    <h2>About Me</h2>
+    <!-- EDIT THIS BIO: write it in your own voice -->
+    <p>I am a Ph.D. candidate in the Department of Computer Science at George Mason University, advised by Zhicong Lu and Sanchari Das. My dissertation develops privacy-preserving, user-centered NLP methods for detecting transliterated offensive content on social media, with a focus on South Asian multilingual contexts such as Bangla and Hindi. My work brings together Natural Language Processing, Human-Computer Interaction, and Privacy, and has appeared at venues including NAACL, EMNLP, EACL, NDSS, AsiaCCS, WiSec, and PETs.</p>
+    <p>Before my Ph.D., I was a Lecturer in the Department of Computer Science and Engineering at Daffodil International University, Bangladesh (2017–2020).</p>
+    <p class="interests"><b>Research Interests:</b> Natural Language Processing, Human-Computer Interaction, Usable Privacy &amp; Security</p>
+
+    <h2>Publications</h2>
+    <h3>Accepted Papers</h3>
+
+    <div class="pub"><div class="venue">EduCHI'26</div><div>
+      <div class="title">Teaching Usable Privacy in HCI Education: Designing, Implementing, and Evaluating an Active Learning Graduate Course</div>
+      <div class="authors">S Das, <b>D Goswami</b>, M Melo, A Johri, VG Motti</div>
+      <div class="full-venue">The 8th Annual Symposium on HCI Education</div></div></div>
+
+    <div class="pub"><div class="venue">AsiaCCS'26</div><div>
+      <div class="title">SoK: Analysis of Privacy Risks and Mitigation in Online Propaganda Detection through the PROMPT Framework</div>
+      <div class="authors"><b>D Goswami</b>, ANB Emran, MHU Sadi, S Das</div>
+      <div class="full-venue">The 21st ACM ASIA Conference on Computer and Communications Security</div></div></div>
+
+    <div class="pub"><div class="venue">NDSS'26</div><div>
+      <div class="title">Privacy-Preserving Compliance Checks on Ethereum via Selective Disclosure</div>
+      <div class="authors">S Khadka, <b>D Goswami</b>, S Das</div>
+      <div class="full-venue">The Network and Distributed System Security Symposium</div></div></div>
+
+    <div class="pub"><div class="venue">NDSS'26</div><div>
+      <div class="title">Frequency-Domain Chaotic Watermarking for Image Authentication Against Deepfakes</div>
+      <div class="authors">D Das, K Fatima, <b>D Goswami</b>, S Das</div>
+      <div class="full-venue">The Network and Distributed System Security Symposium</div></div></div>
+
+    <div class="pub"><div class="venue">ICISS'25</div><div>
+      <div class="title">Designing Cross-Lingual, User-Centered Privacy and Security for Code-Mixed and Multimodal Social Media Environment</div>
+      <div class="authors"><b>D Goswami</b></div>
+      <div class="full-venue">Information Systems Security Conference</div></div></div>
+
+    <div class="pub"><div class="venue">Converge AI</div><div>
+      <div class="title">NLP-PRISM: A Framework for Multi-Dimensional Privacy Risk Detection in Social Media Conversations among Migrant and Refugee Communities</div>
+      <div class="authors"><b>D Goswami</b>, S Das</div>
+      <div class="full-venue">Converge AI: Government Solutions Forum, AI-in-Gov Council, George Mason University</div></div></div>
+
+    <div class="pub"><div class="venue">PETs'25</div><div>
+      <div class="title">Design and Evaluation of a Privacy Preserving Propaganda Detection Tool with a Three Tier Architecture for Robust Inference and Data Protection - TRIDENT</div>
+      <div class="authors">ANB Emran, <b>D Goswami</b>, MHU Sadi, S Das</div>
+      <div class="full-venue">Privacy Enhancing Technologies Symposium</div></div></div>
+
+    <div class="pub"><div class="venue">CUI'25</div><div>
+      <div class="title">Privacy-Preserving Conversational Agents for Multilingual, Code-Mixed, and Multimodal Social Interactions</div>
+      <div class="authors"><b>D Goswami</b></div>
+      <div class="full-venue">The ACM Conversational User Interfaces Conference</div></div></div>
+
+    <div class="pub"><div class="venue">MASC-SLL'25</div><div>
+      <div class="title">Using LLMs to Analyze L1 Interference in a Longitudinal Learner Corpus</div>
+      <div class="authors">P Acharya, <b>D Goswami</b>, K North, A Anastasopoulos, M Zampieri</div>
+      <div class="full-venue">12th Mid-Atlantic Student Colloquium on Speech, Language and Learning</div></div></div>
+
+    <h3>Published Papers</h3>
+
+    <div class="pub"><div class="venue">EACL'26</div><div>
+      <div class="title">NLP Privacy Risk Identification in Social Media (NLP-PRISM): A Survey</div>
+      <div class="authors"><b>D Goswami</b>, JK Naveen Kumar, S Das</div>
+      <div class="full-venue">The 19th Conference of the European Chapter of the ACL</div></div></div>
+
+    <div class="pub"><div class="venue">EMNLP'25</div><div>
+      <div class="title">Tracing L1 Interference in English Learner Writing Using a Longitudinal Corpus with Error Annotations</div>
+      <div class="authors">P Acharya, JE Leibl, <b>D Goswami</b>, K North, M Zampieri, A Anastasopoulos</div>
+      <div class="full-venue">Conference on Empirical Methods in Natural Language Processing</div></div></div>
+
+    <div class="pub"><div class="venue">WiSec'25</div><div>
+      <div class="title">TRIDENT - A Three-Tier Privacy-Preserving Propaganda Detection Model in Mobile Networks using Transformers, Adversarial Learning, and Differential Privacy</div>
+      <div class="authors">ANB Emran, <b>D Goswami</b>, MHU Sadi, S Das</div>
+      <div class="full-venue">The 18th ACM Conference on Security and Privacy in Wireless and Mobile Networks</div></div></div>
+
+    <div class="pub"><div class="venue">NAACL SRW'25</div><div>
+      <div class="title">Multilingual Native Language Identification with Large Language Models</div>
+      <div class="authors"><b>D Goswami</b>, M Zampieri, K North, S Malmasi, A Anastasopoulos</div>
+      <div class="full-venue">Student Research Workshop at NAACL 2025</div></div></div>
+
+    <div class="pub"><div class="venue">JIIS</div><div>
+      <div class="title">On the Performance of Large Language Models on Introductory Programming Assignments</div>
+      <div class="authors">N Raihan, <b>D Goswami</b>, SSC Puspo, ML Siddiq, C Newman, T Ranasinghe, JCS Santos, M Zampieri</div>
+      <div class="full-venue">Journal of Intelligent Information Systems</div></div></div>
+
+    <div class="pub"><div class="venue">NAACL'24</div><div>
+      <div class="title">Native Language Identification in Texts: A Survey</div>
+      <div class="authors"><b>D Goswami</b>, S Thilagan, K North, S Malmasi, M Zampieri</div>
+      <div class="full-venue">Annual Conference of the North American Chapter of the ACL</div></div></div>
+
+    <div class="pub"><div class="venue">BEA'24</div><div>
+      <div class="title">GMU at MLSP 2024: Multilingual Lexical Simplification with Transformer Models</div>
+      <div class="authors"><b>D Goswami</b>, K North, M Zampieri</div>
+      <div class="full-venue">19th Workshop on Innovative Use of NLP for Building Educational Applications, NAACL 2024</div></div></div>
+
+    <div class="pub"><div class="venue">SemEval'24</div><div>
+      <div class="title">MasonTigers at SemEval-2024 Task 1: An Ensemble Approach for Semantic Textual Relatedness</div>
+      <div class="authors"><b>D Goswami</b>, SSC Puspo, MN Raihan, ANB Emran, A Ganguly, M Zampieri</div>
+      <div class="full-venue">18th International Workshop on Semantic Evaluation, NAACL 2024</div></div></div>
+
+    <div class="pub"><div class="venue">SemEval'24</div><div>
+      <div class="title">MasonTigers at SemEval-2024 Task 9: Solving Puzzles with an Ensemble of Chain-of-Thought Prompts</div>
+      <div class="authors">MN Raihan, <b>D Goswami</b>, ANB Emran, SSC Puspo, A Ganguly, M Zampieri</div>
+      <div class="full-venue">18th International Workshop on Semantic Evaluation, NAACL 2024</div></div></div>
+
+    <div class="pub"><div class="venue">SemEval'24</div><div>
+      <div class="title">MasonTigers at SemEval-2024 Task 8: Performance Analysis of Transformer-based Models on Machine-Generated Text Detection</div>
+      <div class="authors">SSC Puspo, MN Raihan, <b>D Goswami</b>, ANB Emran, A Ganguly, Ö Uzuner</div>
+      <div class="full-venue">18th International Workshop on Semantic Evaluation, NAACL 2024</div></div></div>
+
+    <div class="pub"><div class="venue">WILDRE'24</div><div>
+      <div class="title">EmoMix-3L: A Code-Mixed Dataset for Bangla-English-Hindi Emotion Detection</div>
+      <div class="authors">MN Raihan, <b>D Goswami</b>, A Mahmud, A Anastasopoulos, M Zampieri</div>
+      <div class="full-venue">7th Workshop on Indian Language Data: Resources and Evaluation, LREC-COLING 2024</div></div></div>
+
+    <div class="pub"><div class="venue">ISMIS'24</div><div>
+      <div class="title">CSEPrompts: A Benchmark of Introductory Computer Science Prompts</div>
+      <div class="authors">MN Raihan, <b>D Goswami</b>, SSC Puspo, C Newman, T Ranasinghe, M Zampieri</div>
+      <div class="full-venue">27th International Symposium on Methodologies for Intelligent Systems</div></div></div>
+
+    <div class="pub"><div class="venue">CASE'24</div><div>
+      <div class="title">MasonPerplexity at Multimodal Hate Speech Event Detection 2024: Hate Speech and Target Detection Using Transformer Ensembles</div>
+      <div class="authors">A Ganguly, ANB Emran, SSC Puspo, MN Raihan, <b>D Goswami</b>, M Zampieri</div>
+      <div class="full-venue">7th CASE Workshop at EACL 2024</div></div></div>
+
+    <div class="pub"><div class="venue">CASE'24</div><div>
+      <div class="title">MasonPerplexity at Climate-Activism 2024: Integrating Advanced Ensemble Techniques and Data Augmentation for Climate Activism Stance and Hate Event Identification</div>
+      <div class="authors">ANB Emran, A Ganguly, SSC Puspo, <b>D Goswami</b>, MN Raihan</div>
+      <div class="full-venue">7th CASE Workshop at EACL 2024</div></div></div>
+
+    <div class="pub"><div class="venue">LT-EDI'24</div><div>
+      <div class="title">MasonTigers@LT-EDI-2024: An Ensemble Approach towards Detecting Homophobia and Transphobia in Social Media Comments</div>
+      <div class="authors"><b>D Goswami</b>, SSC Puspo, MN Raihan, ANB Emran</div>
+      <div class="full-venue">4th Workshop on Language Technology for Equality, Diversity, Inclusion, EACL 2024</div></div></div>
+
+    <div class="pub"><div class="venue">SocialNLP'23</div><div>
+      <div class="title">OffMix-3L: A Novel Code-Mixed Test Dataset in Bangla-English-Hindi for Offensive Language Identification</div>
+      <div class="authors"><b>D Goswami</b>, MN Raihan, A Mahmud, A Anastasopoulos, M Zampieri</div>
+      <div class="full-venue">11th International Workshop on NLP for Social Media, IJCNLP-AACL 2023</div></div></div>
+
+    <div class="pub"><div class="venue">SEALP'23</div><div>
+      <div class="title">SentMix-3L: A Novel Code-Mixed Test Dataset in Bangla-English-Hindi for Sentiment Analysis</div>
+      <div class="authors">MN Raihan, <b>D Goswami</b>, A Mahmud, A Anastasopoulos, M Zampieri</div>
+      <div class="full-venue">1st Workshop in South East Asian Language Processing, AACL 2023</div></div></div>
+
+    <div class="pub"><div class="venue">BLP'23</div><div>
+      <div class="title">nlpBDpatriots at BLP-2023 Task 1: Two-Step Classification for Violence Inciting Text Detection in Bangla - Leveraging Back-Translation and Multilinguality</div>
+      <div class="authors">MN Raihan, <b>D Goswami</b>, SSC Puspo, M Zampieri</div>
+      <div class="full-venue">1st Bangla Language Processing Workshop, EMNLP 2023</div></div></div>
+
+    <div class="pub"><div class="venue">BLP'23</div><div>
+      <div class="title">nlpBDpatriots at BLP-2023 Task 2: A Transfer Learning Approach towards Bangla Sentiment Analysis</div>
+      <div class="authors"><b>D Goswami</b>, MN Raihan, SSC Puspo, M Zampieri</div>
+      <div class="full-venue">1st Bangla Language Processing Workshop, EMNLP 2023</div></div></div>
+
+    <div class="pub"><div class="venue">IJCCI'18</div><div>
+      <div class="title">Algorithms for String Comparison in DNA Sequences</div>
+      <div class="authors"><b>D Goswami</b>, N Sultana, WR Bristi</div>
+      <div class="full-venue">International Joint Conference on Computational Intelligence</div></div></div>
+
+    <h2>Education</h2>
+    <div class="item"><div class="when">2024 – Present</div><div><b>Ph.D. in Computer Science</b>, George Mason University, USA</div></div>
+    <div class="item"><div class="when">2021 – 2024</div><div><b>M.Sc. in Computer Science</b>, George Mason University, USA</div></div>
+    <div class="item"><div class="when">2012 – 2017</div><div><b>B.Sc. in Computer Science and Engineering</b>, Bangladesh University of Engineering and Technology (BUET)</div></div>
+
+    <h2>Experience</h2>
+    <div class="item"><div class="when">Dec '24 – Present</div><div><b>Graduate Research Assistant</b>, Data Agency and Security (DAS) Lab, George Mason University</div></div>
+    <div class="item"><div class="when">Aug '25 – Present</div><div><b>Graduate Computer Assistant</b>, Formal Methods and Models, Human-Robot Interaction, George Mason University</div></div>
+    <div class="item"><div class="when">Jun '25 – Aug '25</div><div><b>Graduate Research Assistant</b>, Digital Engagement and Empowerment Research (DEER) Lab, George Mason University</div></div>
+    <div class="item"><div class="when">Aug '24 – May '25</div><div><b>Graduate Teaching Assistant</b>, Deep Learning, Machine Learning, George Mason University</div></div>
+    <div class="item"><div class="when">Jun '24 – Aug '24</div><div><b>Student Wage Employment</b>, Language Technology Lab, George Mason University</div></div>
+    <div class="item"><div class="when">Sep '23 – Jul '24</div><div><b>Graduate Teaching Assistant</b>, Database, Intro to Comp. Programming, OOP, George Mason University</div></div>
+    <div class="item"><div class="when">Jun '23 – Aug '23</div><div><b>Graduate Research Assistant</b>, Language Technology Lab, George Mason University</div></div>
+    <div class="item"><div class="when">Sep '22 – May '23</div><div><b>Graduate Teaching Assistant</b>, Database, Machine Learning, George Mason University</div></div>
+    <div class="item"><div class="when">Jun '22 – Aug '22</div><div><b>Graduate Research Assistant</b>, Shehu Lab, George Mason University</div></div>
+    <div class="item"><div class="when">Jan '21 – May '22</div><div><b>Graduate Teaching Assistant</b>, OOP, George Mason University</div></div>
+    <div class="item"><div class="when">Apr '17 – Dec '20</div><div><b>Lecturer</b>, Dept. of Computer Science and Engineering, Daffodil International University, Bangladesh</div></div>
+
+    <h2>Service</h2>
+    <h3>Program Committee &amp; Area Chair</h3>
+    <ul class="plain">
+      <li>Primary Area Chair, CHI 2026 Posters; Secondary Area Chair, CHI 2026</li>
+      <li>Primary and Secondary Area Chair, CSCW 2025</li>
+      <li>Program Committee, ICWSM 2026; COLING 2025</li>
+      <li>Scientific Committee, LREC 2026</li>
+      <li>Shared Task Mentor, BLP 2025 (IJCNLP-AACL)</li>
+    </ul>
+    <h3>Reviewer</h3>
+    <ul class="plain">
+      <li>ACL 2025, 2026; NAACL 2025; EMNLP 2024 (Great Review recognition); COLING 2025; ACL Rolling Review (Aug 2024); LREC-COLING 2024</li>
+      <li>NAACL SRW 2024, 2025; EACL SRW 2026; SemEval 2024; LT-EDI 2024, 2026; DravidianLangTech 2026</li>
+      <li>SIGCSE TS 2024; CSBW 2022, 2023 (IEEE-BIBM); PLoS One 2019</li>
+    </ul>
+  </main>
+
+  <footer>© Dhiman Goswami · Last updated: Nov 2026</footer>
+</div>
+</body>
+</html>
